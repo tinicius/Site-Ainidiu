@@ -10,6 +10,35 @@
 
 }
 
+#part1{
+    background-color: rgb(255, 255, 255);
+    height: 100vh; 
+    width: auto;
+    display: grid;
+    grid-template-columns: 0px 0px 0px;
+    padding: 0px;
+}
+
+#a1{
+   
+    height: 100vh;
+    width: 50%;
+    background-color: aquamarine;
+    
+    
+}
+
+#a2{
+   
+    height: 100vh;
+    width: 50%;
+    background-color: rgb(199, 199, 199);
+    
+    
+    right: 0px;
+    
+}
+
 #nav_principal{
     width: 100%;
     position: fixed;
