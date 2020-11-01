@@ -42,17 +42,29 @@
 
 .img1{
     grid-area: img1;
-    background-color: aqua;
-    min-width: 100vh;
+    background-color: rgb(255, 255, 255);
+    min-width: 50%;
     align-items: center;
-display: flex;
-flex-direction: row;
-flex-wrap: wrap;
-justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#celular{
+    position: relative;
+    max-height: 450px;
+   
+    background-color: rgb(189, 129, 129);
 }
 
 .text1{
     grid-area: text1;
-    background-color: bisque;
-    min-width: 100vh;
+    background-color: rgb(20, 88, 235);
+    min-width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
