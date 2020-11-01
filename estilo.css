@@ -10,44 +10,6 @@
 
 }
 
-#part1{
-    background-color: rgb(255, 255, 255);
-    height: 100vh; 
-    width: auto;
-    display: grid;
-    grid-template-columns: 0px 0px 0px;
-    padding: 0px;
-}
-
-#a1{
-   
-    height: 100vh;
-    width: 50%;
-    background-color: aquamarine;
-    
-    
-}
-
-#a2{
-   
-    height: 100vh;
-    width: 50%;
-    background-color: rgb(199, 199, 199);
-    
-    
-    right: 0px;
-    
-}
-
-#nav_principal{
-    width: 100%;
-    position: fixed;
-}
-
-.teste{
-    height: 800px;
-}
-
 #title{
     text-align: center;
     color: white;
@@ -61,4 +23,36 @@
 #button{
     text-align: center;
     color: white;
+}
+
+#nav_principal{
+    width: 100%;
+    position: fixed;
+    display: none;
+}
+
+.part2{
+    display: grid;
+    grid-template-areas: "img1 text1";
+    grid-template-columns: auto auto;
+    grid-template-rows: 100vh 100vh;
+    background-color: coral;
+    height: 100vh;
+}
+
+.img1{
+    grid-area: img1;
+    background-color: aqua;
+    min-width: 100vh;
+    align-items: center;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.text1{
+    grid-area: text1;
+    background-color: bisque;
+    min-width: 100vh;
 }
