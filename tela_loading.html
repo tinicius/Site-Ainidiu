@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading</title>
+
+    <script type="text/javascript">
+        window.onload = function(){
+  
+
+        var userAgent = navigator.userAgent.toLowerCase();
+
+        var devices = new Array('nokia','iphone','blackberry','sony','lg',
+        'htc_tattoo','samsung','symbian','SymbianOS','elaine','palm',
+        'series60','windows ce','android','obigo','netfront',
+        'openwave','mobilexplorer','operamini');
+
+        //var url_redirect = 'http://mobile.seusite.com';
+
+        function mobiDetect(userAgent, devices) {
+            for(var i = 0; i < devices.length; i++) {
+                if (userAgent.search(devices[i]) > 0) {
+                return true;
+            }
+            }
+                
+        }
+
+        //Url para onde redirecionar
+        var url = "./index.html"
+
+        if (mobiDetect(userAgent, devices)) {
+            url = './index_mobile.html'
+        }else{
+            url = "./index.html"
+        }
+
+
+        //Tempo que deseja esperar, em milissegundos
+        var tempo = 1000;
+            
+        setTimeout(function(){
+            window.location = url;
+        }, tempo);
+
+}
+    </script>
+
+</head>
+<body>
+    <h1>
+        Carregando
+    </h1>
+</body>
+</html>

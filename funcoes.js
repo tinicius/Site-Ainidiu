@@ -1,6 +1,5 @@
 function load() {
-   
-
+    
 }
 
 var lastScrollTop = 0;
@@ -17,3 +16,6 @@ $(window).scroll(function(event){
 
     }
 });
+
+
+
