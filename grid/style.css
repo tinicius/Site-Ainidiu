@@ -1,0 +1,30 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-areas:
+     "p1 p2";
+    grid-gap: 0rem;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100vh 100vh;
+}
+
+.p1{
+    grid-area: p1;
+    background-color: #2084e2;
+    align-content: center;
+    text-align: center;
+}
+.p2{
+    grid-area: p2;
+    background-color: blue;
+    padding-left: auto;
+}
+
+#img1{
+    
+    max-width: 400px;
+    width: auto;
+    height: auto;
+    margin: 0px;
+}

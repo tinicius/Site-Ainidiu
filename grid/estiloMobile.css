@@ -1,0 +1,32 @@
+#home{
+    background-color: rgb(20, 88, 235);
+    height: 100vh;
+
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#title{
+    text-align: center;
+    color: white;
+    
+}
+#subtitle{
+    text-align: center;
+    color: white;
+}
+
+#button{
+    text-align: center;
+    color: white;
+}
+
+#nav_principal{
+    width: 100%;
+    position: fixed;
+    display: none;
+}
